@@ -6,7 +6,13 @@ import java.io.Reader;
 import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
@@ -16,7 +22,7 @@ public class SimpleCsvParser {
 	static Boolean isNewFile=true,validRow=true;
 	static int totalRows=0,skippedRows=0, validRows=0,totalFiles=0;
 	static long totalExectime;
-	public static void ReadCSV(String path) {
+	public static void ReadCSV(String path) throws ParseException {
 		Reader in;
 		totalFiles++;
 			try {
@@ -38,6 +44,14 @@ public class SimpleCsvParser {
 					}
 					if(validRow) {
 						validRow=true;
+						String regex=".*(\\d{4}\\\\\\d{1,2}\\\\\\d{0,2}).*";
+				    	Matcher matcher = Pattern.compile(regex).matcher(path);
+				    	while (matcher.find()) {
+				    		DateFormat dffrom = new SimpleDateFormat("yyyy\\mm\\dd");
+				        	DateFormat dfto = new SimpleDateFormat("dd-MMM-yyyy");;  
+				        	Date today = dffrom.parse(matcher.group(1));
+				        	dataRow[record.size()] = dfto.format(today);
+				    	}
 						WriteCSV(dataRow);
 					}
 					validRow=true;

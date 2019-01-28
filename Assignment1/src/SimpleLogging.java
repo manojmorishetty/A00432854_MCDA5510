@@ -17,7 +17,7 @@ public class SimpleLogging {
 		// Creating consoleHandler and fileHandler
 		consoleHandler = new ConsoleHandler();
 		try {
-			fileHandler = new FileHandler("./sampleLogfile.log");
+			fileHandler = new FileHandler("./Executionlog.log");
 		} catch (SecurityException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -30,7 +30,7 @@ public class SimpleLogging {
 		simpleFormatter = new SimpleFormatter();
 		// Setting formatter to the handler
 		fileHandler.setFormatter(simpleFormatter);
-		logger.log(Level.FINE,"Total rows: "+validRows);
+		logger.log(Level.FINE,"Valid rows: "+validRows);
 		logger.log(Level.FINE,"Skipped rows: "+skippedRows);
 		logger.log(Level.FINE,"Total execution time: " +totalExectime+ " ms");
 	}
