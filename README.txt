@@ -1,9 +1,9 @@
 Assignment #1
 -------------------------------------------------------------------
+ExecutionLog.log - Provides information about Valid rows, Skipped rows and Total Execution time.
+FinalCSV.csv - Appended all the csv files in the directory to a single file.
 
-The goal of the assignment is to simply combine all 6 of these programs into a single
-program that will recursively read a series of data files in CSV format and enter 
-them into a single database table.
-
-The program must log the amount of time it takes to read the files in each directory 
-and the time it takes to write the files to a file using the logger.
+--------------------------------------------------------------------
+DirWalker.java- Scans all the csv files in the directory
+SimpleCsvParser.java - Reads the rows of all csv files and write to single file.
+SimpleLogging.java - Logs the Valid rows, Skipped rows and Total Execution time.
