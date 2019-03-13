@@ -1,0 +1,10 @@
+Mar 13, 2019 3:55:04 PM com.mcds5510.Assignment2 postLog
+INFO: true: Created Successfully
+Mar 13, 2019 3:56:25 PM com.mcds5510.Assignment2 postLog
+INFO: true: Updated Successfully
+Mar 13, 2019 3:56:25 PM com.mcds5510.Assignment2 postLog
+INFO: true: Not Updated
+Mar 13, 2019 3:57:38 PM com.mcds5510.Assignment2 postLog
+INFO: 12 3456 | 12 | 30 | 360 | january | 1969-12-31 20:00:00.0 | Manoj
+Mar 13, 2019 3:58:06 PM com.mcds5510.Assignment2 postLog
+INFO: true: Removed Successfully
