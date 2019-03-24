@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Assignment3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Assignment3.dbo.person' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FName" Type="varchar" MaxLength="50" />
+    <Property Name="LName" Type="varchar" MaxLength="50" />
+    <Property Name="Street_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Street" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Province" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Postal_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Phone_Number" Type="bigint" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Assignment3ModelStoreContainer">
+    <EntitySet Name="person" EntityType="Self.person" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [person].[pid] AS [pid], 
+    [person].[FName] AS [FName], 
+    [person].[LName] AS [LName], 
+    [person].[Street_Number] AS [Street_Number], 
+    [person].[Street] AS [Street], 
+    [person].[City] AS [City], 
+    [person].[Province] AS [Province], 
+    [person].[Country] AS [Country], 
+    [person].[Postal_Code] AS [Postal_Code], 
+    [person].[Phone_Number] AS [Phone_Number], 
+    [person].[email] AS [email]
+    FROM [dbo].[person] AS [person]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

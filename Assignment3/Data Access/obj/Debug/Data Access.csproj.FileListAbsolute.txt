@@ -1,0 +1,12 @@
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\bin\Debug\Data Access.dll.config
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\bin\Debug\Data Access.dll
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\bin\Debug\Data Access.pdb
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\bin\Debug\EntityFramework.dll
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\bin\Debug\EntityFramework.xml
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\obj\Debug\Data Access.csproj.CoreCompileInputs.cache
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\obj\Debug\Data Access.csproj.CopyComplete
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\obj\Debug\Data Access.dll
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\obj\Debug\Data Access.pdb
+C:\Users\Manoj\Documents\Programming software in BE\A00432854_MCDA5510\Assignment3\Data Access\obj\Debug\Data Access.csprojAssemblyReference.cache
